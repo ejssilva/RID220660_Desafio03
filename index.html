@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Board de Tarefas - DNC</title>
+    
+    <!-- Google Fonts - Rubik -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main class="container">
+        <div class="board-card">
+            <header class="board-header">
+                <h1 class="board-title">Board de tarefas</h1>
+                
+                <form class="task-form" id="taskForm">
+                    <input 
+                        type="text" 
+                        id="taskName" 
+                        class="input-field" 
+                        placeholder="Nome da tarefa"
+                        required
+                    >
+                    <input 
+                        type="text" 
+                        id="taskTag" 
+                        class="input-field" 
+                        placeholder="Etiqueta"
+                        required
+                    >
+                    <button type="submit" class="btn-add" aria-label="Adicionar tarefa">
+                        +
+                    </button>
+                </form>
+            </header>
+            
+            <section class="tasks-list" id="tasksList">
+                <!-- As tarefas serão inseridas aqui dinamicamente via JavaScript -->
+            </section>
+            
+            <footer class="board-footer">
+                <p class="tasks-counter" id="tasksCounter">0 tarefas concluídas</p>
+            </footer>
+        </div>
+    </main>
+    
+    <!-- JavaScript -->
+    <script src="js/app.js"></script>
+</body>
+</html>
